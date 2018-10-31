@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "@types/sharedworker": "0.0.28",
     "core-js": "^2.5.4",
     "document-register-element": "^1.8.1",
     "rxjs": "~6.3.3",

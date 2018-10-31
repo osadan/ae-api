@@ -12,6 +12,6 @@ const projectName = 'web-comp5';
         await fs.ensureDir('elements')
         await concat(files, 'elements/api-comp.js');
         await fs.copyFile('./dist/web-comp5/styles.css', 'elements/styles.css')
-        //await fs.copy('./dist/web-comp5/assets/', 'elements/assets/' )
+        await fs.copy('./dist/web-comp5/assets/', 'elements/assets/' )
         
 })()

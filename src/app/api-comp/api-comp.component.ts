@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { WorkerService } from '../worker.service';
 
 @Component({
-  selector: 'api-comp',
+  selector: 'custom-api-comp',
   template: `
     <p>
       api-comp works!
@@ -12,9 +13,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ApiCompComponent implements OnInit {
 
-  constructor() { }
+  constructor(public workerService: WorkerService) { }
 
   ngOnInit() {
+    this.workerService.sendRequest('hello',[1,2]);
   }
 
 }
